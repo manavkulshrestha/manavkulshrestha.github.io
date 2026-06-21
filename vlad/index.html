@@ -319,15 +319,12 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
         <source src="static/videos/banner_video.mp4" type="video/mp4">
       </video>
-      <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
         We propose VLAD-Grasp, a zero-shot grasp synthesis framework that leverages the reasoning and generative capabilities of large-scale vision–language models.
 By formulating grasp detection as the generation of a virtual cylindrical proxy intersecting the object's geometry (encoding an antipodal grasp axis in image space), and subsequently lifting this representation into 3D through depth prediction and geometric alignment, our approach bypasses the need for expert grasp annotations or retraining.
@@ -335,8 +332,51 @@ Our training-free pipeline demonstrates that foundation models can serve as powe
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<!-- Banner image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img
+        src="static/images/method.png"
+        alt="VLAD-Grasp overview"
+        loading="eager"
+        style="width: 100%; height: auto; display: block;"
+      >
+      <h2 class="subtitle has-text-centered">
+        We propose VLAD-Grasp, a zero-shot grasp synthesis framework that leverages the reasoning and generative capabilities of large-scale vision–language models.
+        By formulating grasp detection as the generation of a virtual cylindrical proxy intersecting the object's geometry (encoding an antipodal grasp axis in image space), and subsequently lifting this representation into 3D through depth prediction and geometric alignment, our approach bypasses the need for expert grasp annotations or retraining.
+        Our training-free pipeline demonstrates that foundation models can serve as powerful priors for robotic manipulation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End banner image -->
+
+<!-- Real Robot Demo -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Real Robot Demonstrations</h2>
+      <video
+        poster=""
+        id="real-robot-demo"
+        autoplay
+        controls
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        style="width: 100%; height: auto; display: block;"
+      >
+        <source src="static/videos/real_teaser.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End Real Robot Demo -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
