@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script> window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } }; </script> <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -447,6 +449,32 @@ Furthermore, we demonstrate zero-shot generalization to real-world objects on a 
 <!-- End image carousel -->
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Results</h2>
+
+      <img
+        src="static/images/results.png"
+        alt="VLAD-Grasp overview"
+        style="width: 70%; height: auto; display: block; margin: 0 auto;"
+      >
+
+      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
+        Comparison with baseline methods on the Cornell and Jacquard datasets.
+        Following prior work, a grasp is deemed successful if its associated
+        rectangle has an Intersection-over-Union metric
+        \(\geq 25\%\) with at least one ground-truth annotation.
+        Training on expert grasps is denoted by \((*)\), and language guidance
+        is denoted by \((\dagger)\).
+        ShapeGrasp w/ Oracle denotes an upper bound on ShapeGrasp's
+        confidence-based depth heuristic, reporting success if either the
+        depth or no-depth variant succeeds.
+      </h2>
+
+    </div>
+  </div>
+</section>
 
 
 <!-- Video Presentation -->
